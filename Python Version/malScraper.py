@@ -15,7 +15,7 @@ print(banner)
 
 print(BOLD + Purple + '\tTOOL\t' + '::' + 'malScraper')
 print('\tAuthor\t' + '::' + 'Ryan Monaghan')
-print('\tTwitter\t' + '::' + '@rynmonaghan')
+print('\tTwitter\t' + '::' + '@RyanSecOps')
 print('\tGithub\t' + '::' + 'https://github.com/Ryan-Monaghan/malScraper')
 print('\tBranch\t' + '::' + 'Experimental')
 print('\tVersion\t' + '::' + '1.0\n' + NC)
