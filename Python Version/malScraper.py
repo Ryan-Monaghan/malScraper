@@ -44,14 +44,14 @@ PhishTank = ("C:\\Users\\" + getUser() + "\\Desktop\\malScraper\\PhishTank.csv")
 tempFile = ("C:\\Users\\" + getUser() + "\\Desktop\\malScraper\\temp.zip")
 
 #feed locations
-PayloadFeed=https://urlhaus.abuse.ch/downloads/text/
-C2Feed=cybercrime-tracker.net/all.php
-HexFeed=http://tracker.h3x.eu/api/sites_1month.php
-PhishTank=http://data.phishtank.com/data/online-valid.csv
+#PayloadFeed=https://urlhaus.abuse.ch/downloads/text/
+#C2Feed=cybercrime-tracker.net/all.php
+#HexFeed=http://tracker.h3x.eu/api/sites_1month.php
+#PhishTank=http://data.phishtank.com/data/online-valid.csv
 #HausMalDown=https://urlhaus.abuse.ch/downloads/csv/
 
 #GitHub CodeLoad API
-release=https://api.github.com/repos/Ryan-Monaghan/malScraper/releases/latest
+#release=https://api.github.com/repos/Ryan-Monaghan/malScraper/releases/latest
 
 print(banner)
 
