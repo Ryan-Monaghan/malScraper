@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4c4c5421-48d2-43d1-bf04-d03c7e425a5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4c4c5421-48d2-43d1-bf04-d03c7e425a5a" name="Default Changelist" comment="additional functions">
       <change beforePath="$PROJECT_DIR$/Python Version/malScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Version/malScraper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1625085721559</updated>
     </task>
+    <task id="LOCAL-00001" summary="additional functions">
+      <created>1625107717440</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625107717440</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,5 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="additional functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional functions" />
   </component>
 </project>
