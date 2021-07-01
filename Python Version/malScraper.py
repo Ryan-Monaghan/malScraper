@@ -11,10 +11,12 @@ from time import sleep
 
 
 ########################################################
-#function responsible for clearing users screen on call#
+# function responsible for clearing users screen on call#
 ########################################################
 def clear():
     system('cls')
+    # helptext()
+    useroptions()
 
 
 # formatting
@@ -53,6 +55,7 @@ HausMalDown = ("C:\\Users\\" + getuser() + "\\Desktop\\malScraper\\HausMalDown.c
 PhishTank = ("C:\\Users\\" + getuser() + "\\Desktop\\malScraper\\PhishTank.csv")
 tempFile = ("C:\\Users\\" + getuser() + "\\Desktop\\malScraper\\temp.zip")
 
+
 # feed locations
 # PayloadFeed=https://urlhaus.abuse.ch/downloads/text/
 # C2Feed=cybercrime-tracker.net/all.php
@@ -63,30 +66,30 @@ tempFile = ("C:\\Users\\" + getuser() + "\\Desktop\\malScraper\\temp.zip")
 # GitHub CodeLoad API
 # release=https://api.github.com/repos/Ryan-Monaghan/malScraper/releases/latest
 
-print(banner)
-
-print(BOLD + PURPLE + '\tTOOL\t' + ':: ' + 'malScraper')
-print('\tAuthor\t' + ':: ' + 'Ryan Monaghan')
-print('\tTwitter\t' + ':: ' + '@RyanSecOps')
-print('\tGithub\t' + ':: ' + 'https://github.com/Ryan-Monaghan/malScraper')
-print('\tBranch\t' + ':: ' + 'Experimental')
-print('\tVersion\t' + ':: ' + '1.0\n' + NC)
-
-print(CYAN + 'HELP MENU' + NC + ' :: ' + 'Available ' + YELLOW + 'options ' + NC + 'shown below:\n ')
-
-print(' [*] ' + CYAN + 'Tutorial ' + NC + 'of how to use this tool\t\t\t\t\t' + YELLOW + 'TUTORIAL' + NC)
-print(' [*] ' + 'Show this ' + CYAN + 'Help ' + NC + 'Menu\t\t\t\t\t\t' + YELLOW + 'HELP,GET-HELP,?,-?,/?' + NC)
-print(' [*] ' + CYAN + 'Show options ' + NC + 'for this tool\t\t\t\t\t\t' + YELLOW + 'SHOW OPTIONS,SHOW,OPTIONS' + NC)
-print(' [*] ' + CYAN + 'Clear ' + NC + 'screen\t\t\t\t\t\t\t' + YELLOW + 'CLEAR,CLEAR-HOST,CLS' + NC)
-print(' [*] ' + 'Return to ' + CYAN + 'Home ' + NC + 'Menu\t\t\t\t\t\t' + YELLOW + 'HOME,BACK,CD ..' + NC)
-print(' [*] ' + CYAN + 'Open ' + CYAN + NC + 'an existing report\t\t\t\t\t\t' + YELLOW + 'OPEN,REOPEN' + NC)
-print(' [*] ' + CYAN + 'Quit ' + NC + 'malScraper\t\t\t\t\t\t\t' + YELLOW + 'QUIT,EXIT' + NC)
-print(
-    ' [*] ' + CYAN + 'Install ' + NC + 'the latest ' + CYAN + 'update\t\t\t\t\t\t' + NC + YELLOW + 'INSTALL,UPDATE' + NC)
-print(
-    ' [*] ' + 'Perform ' + CYAN + 'Full-Scan ' + NC + '(Note this may take some time)\t\t\t' + YELLOW + 'FULL,FULL-SCAN,FSCAN' + NC)
-print(
-    ' [*] ' + 'Perform ' + CYAN + 'Quick-Scan ' + NC + '(Most recent 100 Payload Domains)\t\t' + YELLOW + 'QUICK,QUICK-SCAN,QSCAN' + NC)
+# print(banner)
+#
+# print(BOLD + PURPLE + '\tTOOL\t' + ':: ' + 'malScraper')
+# print('\tAuthor\t' + ':: ' + 'Ryan Monaghan')
+# print('\tTwitter\t' + ':: ' + '@memeRyanSecOps')
+# print('\tGithub\t' + ':: ' + 'https://github.com/Ryan-Monaghan/malScraper')
+# print('\tBranch\t' + ':: ' + 'Experimental')
+# print('\tVersion\t' + ':: ' + '1.0\n' + NC)
+#
+# print(CYAN + 'HELP MENU' + NC + ' :: ' + 'Available ' + YELLOW + 'options ' + NC + 'shown below:\n ')
+#
+# print(' [*] ' + CYAN + 'Tutorial ' + NC + 'of how to use this tool\t\t\t\t\t' + YELLOW + 'TUTORIAL' + NC)
+# print(' [*] ' + 'Show this ' + CYAN + 'Help ' + NC + 'Menu\t\t\t\t\t\t' + YELLOW + 'HELP,GET-HELP,?,-?,/?' + NC)
+# print(' [*] ' + CYAN + 'Show options ' + NC + 'for this tool\t\t\t\t\t\t' + YELLOW + 'SHOW OPTIONS,SHOW,OPTIONS' + NC)
+# print(' [*] ' + CYAN + 'Clear ' + NC + 'screen\t\t\t\t\t\t\t' + YELLOW + 'CLEAR,CLEAR-HOST,CLS' + NC)
+# print(' [*] ' + 'Return to ' + CYAN + 'Home ' + NC + 'Menu\t\t\t\t\t\t' + YELLOW + 'HOME,BACK,CD ..' + NC)
+# print(' [*] ' + CYAN + 'Open ' + CYAN + NC + 'an existing report\t\t\t\t\t\t' + YELLOW + 'OPEN,REOPEN' + NC)
+# print(' [*] ' + CYAN + 'Quit ' + NC + 'malScraper\t\t\t\t\t\t\t' + YELLOW + 'QUIT,EXIT' + NC)
+# print(
+#    ' [*] ' + CYAN + 'Install ' + NC + 'the latest ' + CYAN + 'update\t\t\t\t\t\t' + NC + YELLOW + 'INSTALL,UPDATE' + NC)
+# print(
+#    ' [*] ' + 'Perform ' + CYAN + 'Full-Scan ' + NC + '(Note this may take some time)\t\t\t' + YELLOW + 'FULL,FULL-SCAN,FSCAN' + NC)
+# print(
+#    ' [*] ' + 'Perform ' + CYAN + 'Quick-Scan ' + NC + '(Most recent 100 Payload Domains)\t\t' + YELLOW + 'QUICK,QUICK-SCAN,QSCAN' + NC)
 
 
 # this function stored the download path of each feed, and prints to screen when called
@@ -107,8 +110,9 @@ def dirlist():
     print(GREEN + '7. ' + RED + 'Most Recent 100:' + NC)
     print("C:\\Users\\" + getuser() + "\\Desktop\\malScraper\\Top100Report.txt\n")
 
+
 ###############################################################################
-#function responsible for storing the help text for usage in the help function#
+# function responsible for storing the help text for usage in the help function#
 ###############################################################################
 def helptext():
     print(CYAN + 'HELP MENU' + NC + ' :: ' + 'Available ' + YELLOW + 'options ' + NC + 'shown below:\n ')
@@ -128,54 +132,64 @@ def helptext():
     print(
         ' [*] ' + 'Perform ' + CYAN + 'Quick-Scan ' + NC + '(Most recent 100 Payload Domains)\t\t' + YELLOW + 'QUICK,QUICK-SCAN,QSCAN' + NC)
 
+
 ###########################################################
-#function responsible for printing the help menu to screen#
+# function responsible for printing the help menu to screen#
 ###########################################################
-#def help():
-   #helptext()
-    #useroptions()
+def help():
+    helptext()
+    useroptions()
+
 
 #####################################################################
-#function responsible for printing the usage tutorial menu to screen#
+# function responsible for printing the usage tutorial menu to screen#
 #####################################################################
-#def tutorial():
-    #print('Unfinished.')
-    #useroptions()
+# def tutorial():
+# print('Unfinished.')
+# useroptions()
 
 ########################################################################
-#this function allows the user to reopen a previously downloaded report#
+# this function allows the user to reopen a previously downloaded report#
 ########################################################################
-#def reopen():
+# def reopen():
 
 ###############################################
 # function responsible for checking for updates#
 # queries GitHub CodeLoad API to verify version#
 ###############################################
-#def versioncheck():
+# def versioncheck():
 
-###########################################################
-# function responsible for printing the main menu to screen#
-###########################################################
-def main():
-    versioncheck()
-    clear()
-    print(banner)
-    print(BOLD + PURPLE + '\tTOOL\t' + ':: ' + 'malScraper')
-    print('\tAuthor\t' + ':: ' + 'Ryan Monaghan')
-    print('\tTwitter\t' + ':: ' + '@RyanSecOps')
-    print('\tGithub\t' + ':: ' + 'https://github.com/Ryan-Monaghan/malScraper')
-    print('\tBranch\t' + ':: ' + 'Experimental')
-    print('\tVersion\t' + ':: ' + '1.0\n' + NC)
-    #helptext()
-    #useroptions()
+# this function is responsible for handling program exits
+def exit():
+    close = input("Are you sure? (Y/N)")
+    close = close.upper()
+    if close == "Y" or close == "YES":
+        system('cls')
+        quit()
+    elif close == "N" or close == "NO":
+        print("\n")
+        useroptions()
+    else:
+        clear()
+        print(RED + "Error - " + NC + "invalid operation\n\n")
+        system('cls')
+        helptext()
+        useroptions()
+
 
 def useroptions():
-    read = input("malscraper>")
+    read = input("\nmalscraper>")
     read = read.upper()
     if read == "FULL" or read == "FULL-SCAN" or read == "FSCAN":
-        fullscan()
+        #fullscan()
+        print("This menu is TODO")
+        sleep(2)
+        main()
     elif read == "QUICK" or read == "QUICK-SCAN" or read == "QSCAN":
-        quickscan()
+        #quickscan()
+        print("This menu is TODO")
+        sleep(2)
+        main()
     elif read == "QUIT" or read == "EXIT":
         exit()
     elif read == "CLEAR" or read == "CLEAR-HOST" or read == "CLS":
@@ -185,13 +199,43 @@ def useroptions():
     elif read == "BACK" or read == "CD .." or read == "HOME":
         main()
     elif read == "TUTORIAL":
-        tutorial()
+        #tutorial()
+        print("This menu is TODO")
+        sleep(2)
+        main()
     elif read == "REOPEN" or read == "OPEN":
-        reopen()
+        #reopen()
+        print("This menu is TODO")
+        sleep(2)
+        main()
     elif read == "INSTALL" or read == "UPDATE":
-        installupdate()
+        #installupdate()
+        print("This menu is TODO")
+        sleep(2)
+        main()
     else:
-        clear()
+        system('cls')
         print(RED + "Error - " + NC + "invalid operation\n\n")
         helptext()
         useroptions()
+
+
+###########################################################
+# function responsible for printing the main menu to screen#
+###########################################################
+def main():
+    system('cls')
+    # versioncheck()
+    # clear()
+    print(banner)
+    print(BOLD + PURPLE + '\tTOOL\t' + ':: ' + 'malScraper')
+    print('\tAuthor\t' + ':: ' + 'Ryan Monaghan')
+    print('\tTwitter\t' + ':: ' + '@RyanSecOps')
+    print('\tGithub\t' + ':: ' + 'https://github.com/Ryan-Monaghan/malScraper')
+    print('\tBranch\t' + ':: ' + 'Experimental')
+    print('\tVersion\t' + ':: ' + '1.0\n' + NC)
+    helptext()
+    useroptions()
+
+
+main()
